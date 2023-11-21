@@ -1,0 +1,20 @@
+.folder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 20px;
+  border: 1px solid black;
+  padding: 0 5px;
+}
+
+.left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}

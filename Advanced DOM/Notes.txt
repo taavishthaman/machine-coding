@@ -1,0 +1,5 @@
+1. document.querySelectorAll() returns a NodeList.
+2. document.getElementsByTagName() and document.getElementsByClassName() return a HTMLCollection which is a 
+    Live Collection(changes when DOM changes).
+
+    

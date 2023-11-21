@@ -1,0 +1,21 @@
+Abort Controller, cancel all requests which are not required
+
+//First Step : Inside the useEffect first create an AbortController Object
+useEffect(() => {
+    const controller = AbortController();
+    
+}, [])
+
+//Second Step: Pass an object with a signal property in the fetch request
+
+const result = await fetch(url, {signal : controller.signal});
+
+//Thid step: return a cleanup function with controller.abort()
+
+useEffect(() => {
+
+    //At the end
+    return function() {
+        controller.abort();
+    }
+}, [query])
